@@ -1,0 +1,18 @@
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin container() {
+	max-width: 1170px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
+}
+
+@mixin list-nostyle() {
+	list-style-type: none;
+}

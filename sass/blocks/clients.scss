@@ -1,0 +1,27 @@
+.clients__wrapper {
+	@include container();
+}
+
+.clients__header {
+	padding-top: 1px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.clients__title {
+	margin: 20px 0;
+}
+
+.clients__items {
+	@include list-nostyle();
+	display: flex;
+	justify-content: space-between;
+}
+
+.clients__item {
+	width: 138px;
+	height: 76px;
+	background-color: red;
+}
+
+

@@ -1,0 +1,32 @@
+.container {
+	@include	container();
+	background: red;
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.main-header__main-logo {
+	min-width: 143px;
+	background-color: grey;
+}
+
+.main-header__menu-list {
+	list-style-type: none;
+	font-size: 0;	
+}
+.main-header__menu-item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-header__menu-link {
+	display: block;
+	font-size: 14px;
+	padding: 20px;
+	background-color: green;
+	text-transform: uppercase;
+}

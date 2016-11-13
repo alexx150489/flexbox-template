@@ -1,0 +1,33 @@
+.promo__slide {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.promo__slide img{
+	display: block;
+}
+
+.promo__discription {
+	@include container();
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 20px;
+	background-color: #F4783B;
+}
+
+.promo__title {
+	margin-bottom: 20px;
+}
+
+.promo__discription-wrapper {
+	padding-right: 20px;
+}
+
+.promo__btn-more {
+	display: block;
+	background-color: pink;
+	white-space: pre;
+	padding: 12px 50px;
+	text-align: center;
+}
