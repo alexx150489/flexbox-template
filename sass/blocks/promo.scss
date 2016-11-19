@@ -1,3 +1,7 @@
+.promo {
+	background-color: #F4783B;
+}
+
 .promo__slide {
 	max-width: 1920px;
 	margin: 0 auto;
@@ -22,12 +26,24 @@
 
 .promo__discription-wrapper {
 	padding-right: 20px;
+	color: white;
 }
 
 .promo__btn-more {
 	display: block;
-	background-color: pink;
+	background-color: white;
 	white-space: pre;
 	padding: 12px 50px;
 	text-align: center;
+	color: black;
+}
+
+@media (max-width: 768px) {
+	.promo__discription {
+		flex-direction: column;
+		text-align: center;
+	}
+	.promo__text {
+		margin-bottom: 20px;
+	}
 }

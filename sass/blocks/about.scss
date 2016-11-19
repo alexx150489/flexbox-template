@@ -1,5 +1,10 @@
+.about {
+	background-color: #E8E8E8;
+}
+
 .about__about-wrapper {
 	@include container();
+	padding-bottom: 1px;
 }
 
 .about__header {
@@ -15,8 +20,7 @@
 .about__info-wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	
+	margin-bottom: 50px;
 }
 
 .about__info {
@@ -25,7 +29,6 @@
 }
 
 .about__img {
-	min-width: 500px;
 	border: 5px solid #ddd;
 	& img {
 		display: block;
@@ -50,8 +53,33 @@
 
 .about__btn-more {
 	display: inline-block;
-	background-color: pink;
+	background-color: #428bca;
 	white-space: pre;
 	padding: 12px 50px;
 	text-align: center;
+	color: white;
+}
+
+@media (max-width: 992px) {
+	.about__info-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.about__info {
+		text-align: center;
+		padding-right: 0;
+	}
+	
+	.about__list {
+		width: 200px;
+		margin: 50px auto;
+		text-align: left;
+	}
+	
+	.about__btn-more {
+		
+		margin-bottom: 30px;
+		padding: 12px 113px;
+	}
 }
