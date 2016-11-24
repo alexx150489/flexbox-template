@@ -17,7 +17,6 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	
 }
 
 .clients__item {
@@ -35,8 +34,8 @@
 	display: flex;
 }
 
-
 @media (max-width: 500px) {
+	
 	.clients__items {
 		flex-direction: column;
 		align-items: center;
@@ -44,7 +43,7 @@
 	.clients__items-group {
 		flex-direction: column;
 	}
-	
+
 }
 
 
