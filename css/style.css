@@ -1,3 +1,7 @@
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -413,10 +417,10 @@ button:focus {
   outline: none; }
 
 .main-header {
-  max-width: 1170px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -427,24 +431,26 @@ button:focus {
   display: block; }
 
 .main-header__burger {
+  display: none;
   width: 40px;
-  height: 34px;
-  background-color: red; }
+  height: 40px;
+  background-color: #F4783B;
+  border-radius: 50%;
+  cursor: pointer; }
 
 .main-header__menu-list {
   list-style-type: none;
-  font-size: 0; }
-
-.main-header__menu-item {
-  display: inline-block;
-  vertical-align: top; }
+  display: flex; }
 
 .main-header__menu-link {
   display: block;
   font-size: 14px;
   padding: 5px 12px;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+  transition-duration: 0.2s; }
+  .main-header__menu-link:hover {
+    color: #F4783B; }
 
 .promo {
   background-color: #F4783B; }
@@ -457,10 +463,9 @@ button:focus {
   display: block; }
 
 .promo__discription {
-  max-width: 1170px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -483,10 +488,9 @@ button:focus {
   color: black; }
 
 .features__features-wrapper {
-  max-width: 1170px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px; }
+  padding: 0 15px;
+  box-sizing: border-box; }
 
 .features__header {
   padding-top: 1px;
@@ -524,10 +528,9 @@ button:focus {
   background-color: #E8E8E8; }
 
 .about__about-wrapper {
-  max-width: 1170px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
   padding-bottom: 1px; }
 
 .about__header {
@@ -536,7 +539,7 @@ button:focus {
   text-align: center; }
 
 .about__title {
-  margin: 20px 0; }
+  margin: 18px 0; }
 
 .about__info-wrapper {
   display: flex;
@@ -573,10 +576,9 @@ button:focus {
   color: white; }
 
 .clients__wrapper {
-  max-width: 1170px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px; }
+  padding: 0 15px;
+  box-sizing: border-box; }
 
 .clients__header {
   padding-top: 1px;
@@ -611,10 +613,9 @@ button:focus {
   color: white; }
 
 .footer__footer-wrapper {
-  max-width: 1170px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px; }
+  padding: 0 15px;
+  box-sizing: border-box; }
 
 .footer__footer-top {
   display: flex;
@@ -673,16 +674,58 @@ button:focus {
   padding: 5px 0; }
 
 @media (min-width: 769px) {
-  .main-header__burger {
-    display: none; }
+  .main-header {
+    max-width: 750px;
+    margin: 0 auto; }
+  .promo__discription {
+    max-width: 750px;
+    margin: 0 auto; }
+  .features__features-wrapper {
+    max-width: 750px;
+    margin: 0 auto; }
   .features__features-item {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .about__about-wrapper {
+    max-width: 750px;
+    margin: 0 auto; }
+  .clients__wrapper {
+    max-width: 750px;
+    margin: 0 auto; }
+  .footer__footer-wrapper {
+    max-width: 750px;
+    margin: 0 auto; } }
+
+@media (min-width: 992px) {
+  .main-header {
+    max-width: 970px; }
+  .promo__discription {
+    max-width: 970px; }
+  .features__features-wrapper {
+    max-width: 970px; }
+  .about__about-wrapper {
+    max-width: 970px; }
+  .clients__wrapper {
+    max-width: 970px; }
+  .footer__footer-wrapper {
+    max-width: 970px; } }
 
 @media (min-width: 1185px) {
   .features__features-item {
     flex-basis: 25%; } }
 
 @media (min-width: 1200px) {
+  .main-header {
+    max-width: 1170px; }
+  .promo__discription {
+    max-width: 1170px; }
+  .features__features-wrapper {
+    max-width: 1170px; }
+  .about__about-wrapper {
+    max-width: 1170px; }
+  .clients__wrapper {
+    max-width: 1170px; }
+  .footer__footer-wrapper {
+    max-width: 1170px; }
   .footer__contacts-group {
     display: flex; }
   .footer__contacts {
@@ -699,8 +742,41 @@ button:focus {
     flex-grow: 1; } }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 63px; }
+  .main-header {
+    display: block;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+    padding: 10px 15px; }
+  .main-header::after {
+    content: "";
+    display: table;
+    clear: both; }
   .main-header__main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0; }
+  .main-header__menu-list {
+    display: block; }
+  .main-header__menu-item {
+    display: block;
+    border-bottom: 1px solid gray;
+    transition-duration: 0.2s; }
+  .main-header__main-logo {
+    float: left; }
+  .main-header__main-nav {
+    background-color: #fff;
+    text-align: center;
     display: none; }
+  .main-header__burger {
+    float: right;
+    display: block; }
   .promo__discription {
     flex-direction: column;
     text-align: center; }

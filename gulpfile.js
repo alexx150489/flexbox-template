@@ -16,7 +16,7 @@ var del = require("del");
 var run = require("run-sequence");
 
 gulp.task("style", function() {
-  gulp.src("sass/style.scss")
+	return gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

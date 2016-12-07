@@ -5,3 +5,14 @@ $text-color: #656565;
 $title-color: #333;
 
 $main-bg-color: #F4783B;
+
+
+$media-desk-ld: "(max-width: 1200px)";
+/* Medium Devices, Desktops */
+$media-desk-md: "(max-width: 992px)";
+/* Small Devices, Tablets */
+$media-desk-sd: "(max-width:768px)";
+/* Extra Small Devices, Phones */
+$media-desk-esd: "(max-width: 480px)";
+/* Custom, iPhone Retina */
+$media-desk-custom: "(max-width: 320px)";
