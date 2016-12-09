@@ -31,14 +31,18 @@
 
 .promo__btn-more {
 	display: block;
-	background-color: white;
+	background-color: #fff;
 	white-space: pre;
 	padding: 12px 50px;
 	text-align: center;
 	color: black;
+	transition: background-color .2s;
+	&:hover {
+		background-color: #e2e2e2;
+	}
 }
 
-@media (max-width: 768px) {
+@media #{$media-desk-sd} {
 	.promo__discription {
 		flex-direction: column;
 		text-align: center;

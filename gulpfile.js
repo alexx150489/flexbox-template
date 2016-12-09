@@ -26,10 +26,7 @@ gulp.task("style", function() {
         "last 2 Firefox versions",
         "last 2 Opera versions",
         "last 2 Edge versions"
-      ]}),
-      mqpacker({
-      sort: true
-      })
+      ]})
     ]))
     .pipe(gulp.dest("css"))
     .pipe(server.reload({stream: true}))

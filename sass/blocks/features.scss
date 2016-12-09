@@ -24,7 +24,7 @@
 .features__features-item {
 	text-align: center;
 	list-style-type: none;
-	flex-basis: 25%;
+	width: 25%;
 	flex-grow: 1;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -40,21 +40,24 @@
 	border-radius: 50%;
 }
 
-@media (max-width: 768px) {
+.features__icon i {
+	font-size: 40px;
+	line-height: 94px;
+	color: #c1bdbd;
+}
+
+@media #{$media-desk-md} {
 	.features__features-item {
-		flex-basis: 100%;
+		width: 50%;
 	}
 }
 
-@media (min-width: 769px) {
+
+@media #{$media-desk-sd} {
 	.features__features-item {
-		flex-basis: 50%;
+		width: 100%;
 	}
 }
 
 
-@media (min-width: 1185px) {
-	.features__features-item {
-		flex-basis: 25%;
-	}
-}
+

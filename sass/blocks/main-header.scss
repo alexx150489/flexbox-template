@@ -19,17 +19,29 @@
 	background-color: $main-bg-color;
 	border-radius: 50%;
 	cursor: pointer;
+	text-align: center;
+	transition: background-color .2s;
+	&:hover {
+		background-color: #de6f39;
+	}
+}
+
+.main-header__burger i {
+	font-size: 20px;
+	line-height: 40px;
+	color: #fff;
 }
 
 .main-header__menu-list {
 	list-style-type: none;
 	display: flex;
+	margin-top: 10px;
 }
 
 .main-header__menu-link {
 	display: block;
 	font-size: 14px;
-	padding: 5px 12px;
+	padding: 0 12px;
 	text-transform: uppercase;
 	color: black;
 	transition-duration: 0.2s;
@@ -70,7 +82,12 @@
 	.main-header__menu-item {
 		display: block;
 		border-bottom: 1px solid gray;
+	
 		transition-duration: 0.2s;
+	}
+	
+	.main-header__menu-link {
+		padding: 10px 0;
 	}
 
 	.main-header__main-logo {
